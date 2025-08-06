@@ -1,0 +1,65 @@
+{
+  "name": "@strainprint/microsoft-fabric-mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server for Microsoft Fabric & Power BI - Query datasets, execute DAX, refresh data, and manage workspaces",
+  "main": "dist/index.js",
+  "bin": {
+    "fabric-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "prepublishOnly": "npm run build",
+    "postinstall": "node scripts/setup.js || true"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "microsoft-fabric",
+    "power-bi",
+    "powerbi",
+    "dax",
+    "data-warehouse",
+    "azure",
+    "claude",
+    "ai",
+    "llm"
+  ],
+  "author": "Steve Adams <steve@strainprint.ca>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strainprint/microsoft-fabric-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/strainprint/microsoft-fabric-mcp/issues"
+  },
+  "homepage": "https://github.com/strainprint/microsoft-fabric-mcp#readme",
+  "files": [
+    "dist/**/*",
+    "scripts/**/*",
+    "README.md",
+    "LICENSE",
+    ".env.example"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "@azure/identity": "^4.0.0",
+    "@azure/msal-node": "^2.6.0",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.2",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.10"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
