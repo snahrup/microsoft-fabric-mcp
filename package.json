@@ -1,5 +1,5 @@
 {
-  "name": "@strainprint/microsoft-fabric-mcp",
+  "name": "microsoft-fabric-mcp",
   "version": "1.0.0",
   "description": "Model Context Protocol (MCP) server for Microsoft Fabric & Power BI - Query datasets, execute DAX, refresh data, and manage workspaces",
   "main": "dist/index.js",
